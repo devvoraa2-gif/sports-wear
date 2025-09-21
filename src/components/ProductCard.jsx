@@ -11,9 +11,9 @@ export default function ProductCard({ product }) {
     <div className="group rounded-3xl border border-zinc-200 bg-white overflow-hidden hover:shadow-md transition-shadow">
       <div className="relative">
         {product.badge && (
-          <span className="absolute right-3 top-3 text-[10px] tracking-wide bg-black text-white px-2 py-1 rounded-md">
+          <div className="absolute top-4 right-[-60px] rotate-45 bg-white text-red-500 text-md font-semibold shadow flex items-center justify-center w-[180px] h-[30px]">
             {product.badge}
-          </span>
+          </div>
         )}
         <img
           src={product.img}
@@ -31,13 +31,6 @@ export default function ProductCard({ product }) {
         </div>
 
         <div className="mt-3 grid grid-cols-2 gap-2">
-          <Link
-            to={`/product/${product.id}`}
-            state={{ image: product.img }}
-            className="w-full text-center rounded-xl border border-zinc-300 py-2 text-sm hover:bg-zinc-100"
-          >
-            التفاصيل
-          </Link>
           <button
             onClick={() => {
               addItem({
@@ -54,6 +47,13 @@ export default function ProductCard({ product }) {
           >
             أضف للسلة
           </button>
+          <Link
+            to={`/product/${product.id}`}
+            state={{ image: product.img }}
+            className="w-full text-center rounded-xl border border-zinc-300 py-2 text-sm hover:bg-zinc-100"
+          >
+            التفاصيل
+          </Link>
         </div>
       </div>
     </div>
