@@ -27,20 +27,15 @@ export default function ProductDetails() {
 
   return (
     <section className="max-w-7xl mx-auto px-4 lg:px-8 py-10">
-      <div className="grid lg:grid-cols-2 gap-10">
-        <img
-          src={overrideImg || product.img}
-          alt={product.name}
-          className="rounded-3xl border border-zinc-200 w-full"
-        />
+      <div className="grid lg:grid-cols-2">
 
         <div>
-          <h1 className="text-3xl font-extrabold">{product.name}</h1>
+          <h1 className="text-4xl font-bold">{product.name}</h1>
           <div className="mt-2 text-lg font-semibold">
             {new Intl.NumberFormat("ar-EG").format(product.price)} جنيه
           </div>
           <p className="mt-4 text-zinc-600">
-            {product.description || "منتج رياضي عالي الجودة بخامات مريحة وأداء ممتاز."}
+            {<p className="text-red-600 text-bold">{product.description}</p> || "منتج رياضي عالي الجودة بخامات مريحة وأداء ممتاز."}
           </p>
 
           {product.sizes?.length ? (
@@ -51,7 +46,7 @@ export default function ProductDetails() {
                   <button
                     key={s}
                     onClick={() => setSize(s)}
-                    className={`px-3 py-2 text-sm rounded-xl border ${
+                    className={`px-3 py-2 text-lg font-medium rounded-xl border ${
                       size === s ? "border-zinc-900 bg-zinc-900 text-white" : "border-zinc-300 hover:bg-zinc-100"
                     }`}
                   >
@@ -83,12 +78,13 @@ export default function ProductDetails() {
             أضف إلى السلة
           </button>
 
-          <div className="mt-4">
-            <Link to="/catalog" className="text-sm text-zinc-600 hover:text-zinc-900">
-              عودة للمتجر
-            </Link>
-          </div>
         </div>
+         <img
+          src={overrideImg || product.img}
+          alt={product.name}
+          className="rounded-3xl border border-zinc-200 w-full"
+        />
+
       </div>
     </section>
   );
