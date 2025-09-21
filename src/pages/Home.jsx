@@ -137,28 +137,47 @@ export default function Home() {
       {/* About */}
       <section
         id="about"
-        className="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-16"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <div>
-            <h2 className="text-2xl font-bold tracking-tight">
-              مصممة للحركة. مناسبة لكل يوم.
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+          {/* النص */}
+          <div className="pt-6 lg:pt-12">
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900">
+              مصممة للحركة مناسبة لكل يوم
             </h2>
-            <p className="mt-3 text-zinc-600 leading-relaxed">
-              ملابس تجمع الأداء بالشكل — خامات قابلة للتنفس وخياطة متينة وقصّات
-              عصرية من Golden Wear.
+
+            <p className="mt-4 text-zinc-900 font-bold leading-relaxed text-base sm:text-lg">
+              ملابس تجمع الأداء بالشكل —{" "}
+              <span className="text-red-700 font-medium">
+                خامات قابلة للتنفس وخياطة متينة
+              </span>
+              <span className="block mt-1">وقصّات عصرية من Golden Wear.</span>
             </p>
-            <ul className="mt-4 space-y-2 text-zinc-700 text-sm list-disc list-inside">
-              <li>صناعة مصرية بجودة عالية</li>
-              <li>تغليف صديق للبيئة</li>
-              <li>إرجاع مجاني خلال 7 أيام</li>
+
+            <ul className="mt-6 space-y-3 text-zinc-900 font-bold text-sm sm:text-base">
+              <li className="flex items-start gap-2">
+                <span className="text-red-600 mt-1">●</span>
+                <span>صناعة مصرية بجودة عالية</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-600 mt-1">●</span>
+                <span>تغليف صديق للبيئة</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-red-600 mt-1">●</span>
+                <span>إرجاع مجاني خلال 7 أيام</span>
+              </li>
             </ul>
           </div>
-          <img
-            src={aboutImg}
-            alt="عن Golden Wear"
-            className="rounded-3xl border border-zinc-200 shadow-md w-full"
-          />
+
+          {/* الصورة */}
+          <div className="flex justify-center">
+            <img
+              src={aboutImg}
+              alt="عن Golden Wear"
+              className="rounded-3xl border border-zinc-300 shadow-lg w-full max-w-md lg:max-w-full"
+            />
+          </div>
         </div>
       </section>
     </>
