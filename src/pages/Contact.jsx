@@ -1,6 +1,5 @@
 // FILE: src/pages/Contact.jsx
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 export default function Contact() {
   const [sent, setSent] = useState(false);
@@ -12,7 +11,7 @@ export default function Contact() {
 
   function onSubmit(e) {
     e.preventDefault();
-    if (!form.name || !form.phone || !form.message) return alert("كمّلي البيانات الأساسية.");
+    if (!form.name || !form.phone || !form.message) return alert("كمّل البيانات الأساسية.");
     setSent(true);
   }
 
@@ -22,7 +21,7 @@ export default function Contact() {
         {/* معلومات التواصل */}
         <div className="space-y-5">
           <h1 className="text-3xl font-extrabold tracking-tight">تواصل معنا</h1>
-          <p className="text-zinc-600">لو عندك استفسار عن طلبات، مقاسات أو تعاونات — ابعتي لنا وهردّ عليك قريبًا.</p>
+          <p className="text-zinc-600">لو عندك استفسار عن طلبات، مقاسات أو تعاونات — ابعت لنا وهنردّ عليك قريبًا.</p>
 
           <div className="rounded-3xl border border-zinc-200 bg-white p-5 space-y-4">
             <Row label="واتساب" value={<a className="text-zinc-900 hover:underline" href="https://wa.me/201000000000" target="_blank">+20 100 000 0000</a>} />
@@ -30,37 +29,11 @@ export default function Contact() {
             <Row label="الإيميل" value={<a className="text-zinc-900 hover:underline" href="mailto:support@goldenwear.eg">support@goldenwear.eg</a>} />
             <Row label="العنوان" value={<span className="text-zinc-900">القاهرة، مصر</span>} />
           </div>
-
-          <div className="flex gap-3">
-            <a
-              href="https://wa.me/201000000000"
-              target="_blank"
-              className="px-5 py-3 rounded-xl bg-zinc-900 text-white hover:bg-zinc-800"
-            >
-              تواصل واتساب
-            </a>
-            <Link
-              to="/catalog"
-              className="px-5 py-3 rounded-xl border border-zinc-300 hover:bg-zinc-100"
-            >
-              تصفّح المنتجات
-            </Link>
-          </div>
-
-          <div className="rounded-3xl border border-zinc-200 overflow-hidden">
-            <iframe
-              title="Golden Wear Map"
-              className="w-full h-56"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=Cairo,%20Egypt&output=embed"
-            />
-          </div>
         </div>
 
         {/* نموذج مراسلة */}
         <div className="rounded-3xl border border-zinc-200 bg-white p-6">
-          <h2 className="text-lg font-semibold mb-4">ارسلّي رسالة</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-center">ارسلّ رسالة</h2>
 
           {sent ? (
             <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-emerald-800">
@@ -74,18 +47,18 @@ export default function Contact() {
               </div>
               <Input label="الإيميل (اختياري)" name="email" type="email" value={form.email} onChange={onChange} />
               <div>
-                <label className="text-sm text-zinc-600">رسالتك</label>
+                <label className="text-sm text-zinc-900 font-bold">رسالتك</label>
                 <textarea
                   name="message"
                   value={form.message}
                   onChange={onChange}
                   rows={5}
                   className="mt-1 w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-300"
-                  placeholder="اكتبي تفاصيل سؤالك…"
+                  placeholder="اكتب تفاصيل سؤالك…"
                   required
                 />
               </div>
-              <button className="w-full sm:w-auto px-6 py-3 rounded-xl bg-zinc-900 text-white hover:bg-zinc-800">
+              <button className="w-full sm:w-auto px-10 py-2 rounded bg-zinc-900 text-white hover:bg-zinc-800">
                 إرسال
               </button>
             </form>
@@ -99,7 +72,7 @@ export default function Contact() {
 function Row({ label, value }) {
   return (
     <div className="flex items-center justify-between text-sm">
-      <span className="text-zinc-600">{label}</span>
+      <span className="text-zinc-900 font-bold">{label}</span>
       <span className="font-medium">{value}</span>
     </div>
   );
@@ -108,7 +81,7 @@ function Row({ label, value }) {
 function Input({ label, ...props }) {
   return (
     <div>
-      <label className="text-sm text-zinc-600">{label}</label>
+      <label className="text-sm text-zinc-900 font-bold">{label}</label>
       <input
         {...props}
         className="mt-1 w-full rounded-xl border border-zinc-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-zinc-300"

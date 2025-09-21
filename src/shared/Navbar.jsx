@@ -60,7 +60,7 @@ export default function Navbar() {
               `${linkBase} ${isActive ? linkActive : linkIdle}`
             }
           >
-            تواصل
+            التواصل
           </NavLink>
         </nav>
 
