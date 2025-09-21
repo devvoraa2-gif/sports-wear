@@ -118,8 +118,8 @@ export default function Catalog() {
   };
 
   return (
-    <section className="max-w-7xl mx-auto px-4 lg:px-8 py-10">
-      {/* شارة التصنيف */}
+  <section className="max-w-7xl mx-auto px-4 lg:px-8 py-10 overflow-x-hidden relative">
+        {/* شارة التصنيف */}
       {active !== "all" && (
         <div className="mb-4 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-100 text-zinc-700 text-xs">
           تصفية حسب: <span className="font-semibold">{TABS.find((t) => t.key === active)?.label}</span>
