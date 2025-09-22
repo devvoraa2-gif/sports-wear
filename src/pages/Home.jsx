@@ -43,7 +43,7 @@ export default function Home() {
             <div className="mt-6 flex flex-col sm:flex-row justify-center lg:justify-start gap-3">
               <Link
                 to="/catalog"
-                className="px-5 py-3 me-5 rounded-xl bg-zinc-900 text-white hover:bg-zinc-800 transition"
+                className="px-5 py-3 lg:me-5 rounded-xl bg-zinc-900 text-white hover:bg-zinc-800 transition"
               >
                 تسوّق الآن
               </Link>
