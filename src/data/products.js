@@ -108,6 +108,8 @@ const products = [
     sizes: ["S", "M", "L", "XL"],
     description: "شورت خفيف بجيوب عملية وتمدد مريح."
   },
+
+
   {
     id: 16,
     slug: "product-16",
@@ -133,23 +135,23 @@ const products = [
   {
     id: 18,
     slug: "product-18",
-    name: "Street Sneaker 18",
-    category: "sneakers",
-    price: 1299,
+    name: "تيشرت النادي الأهلي",
+    category: "men",
+    price: 350,
     img: img18,
-    sizes: ["40", "41", "42", "43", "44"],
-    description: "حذاء عصري مناسب للشارع."
+    sizes: ["M", "L", "XL", "2XL"],
+    description: " تيشرت النادي الأهلي – موسم 2026 | إصدار رسمي - الخامة: بسكوتة (بادج 3D بضمان على البادج)"
   },
   {
     id: 19,
     slug: "product-19",
-    name: "Junior Tee 19",
-    category: "kids",
-    price: 399,
+    name: "تيشرت أرسنال",
+    category: "men",
+    price: 350,
     img: img19,
-    badge: "أطفال",
-    sizes: ["6-8", "8-10", "10-12"],
-    description: "قميص خفيف للأطفال."
+    badge: "رائج",
+    sizes: ["M", "L", "XL", "2XL"],
+    description: "تيشرت أرسنال – بولو كلاسيك | إصدار رسمي - الخامة: بولو كلاسيك (بادج تطريز)"
   },
   {
     id: 20,
@@ -194,12 +196,12 @@ const products = [
   {
     id: 24,
     slug: "product-24",
-    name: "Junior Tee 24",
-    category: "kids",
-    price: 429,
+    name: "تيشرت باسكت بول الأمريكي",
+    category: "men",
+    price: 350,
     img: img24,
-    sizes: ["6-8", "8-10", "10-12"],
-    description: "ملابس مريحة للأطفال."
+    sizes: ["S", "M", "L", "XL"],
+    description: "تيشرت باسكت بول الأمريكي | إصدار رسمي - الخامة: كلوز ماش مخرمة (بادج تطريز)"
   },
   {
     id: 25,
@@ -214,92 +216,92 @@ const products = [
   {
     id: 26,
     slug: "product-26",
-    name: "Sneaker Pro 26",
-    category: "sneakers",
-    price: 1699,
+    name: "تيشرت مانشستر يونايتد",
+    category: "men",
+    price: 350,
     img: img26,
-    sizes: ["40", "41", "42", "43", "44"],
-    description: "حذاء بخامة مقاومة للماء."
+    sizes: ["S", "M", "L", "XL"],
+    description: "تيشرت مانشستر يونايتد – نسخة أولد ترافورد 2008 | دوري الأبطال - الخامة: بلاير هاي كوبي (بدج تطريز ديجيتال)"
   },
   {
     id: 27,
     slug: "product-27",
-    name: "Aero Tee 27",
+    name: "شورت جوردن",
     category: "men",
-    price: 699,
+    price: 350,
     img: img27,
     sizes: ["S", "M", "L", "XL"],
-    description: "تيشيرت خفيف مناسب للصيف."
+    description: "شورت جوردن | إصدار رسمي - الخامة: بسكوتة مستوردة (بدج + رقم تطريز ديجيتال)"
   },
   {
     id: 28,
     slug: "product-28",
-    name: "Street Sneaker 28",
-    category: "sneakers",
-    price: 1399,
+    name: "تيشرت منتخب الأرجنتين",
+    category: "men",
+    price: 350,
     img: img28,
-    sizes: ["40", "41", "42", "43", "44"],
-    description: "حذاء مريح للحياة اليومية."
+    sizes: ["S", "M", "L", "XL"],
+    description: "تيشرت منتخب الأرجنتين – الأساسي نسخة ليونيل ميسي | إصدار رسمي - الخامة: بسكوتة (بدج تطريز ديجيتال)"
   },
   {
     id: 29,
     slug: "product-29",
-    name: "Junior Tee 29",
-    category: "kids",
-    price: 449,
+    name: "تيشرت بايرن ميونخ ",
+    category: "men",
+    price: 350,
     img: img29,
-    sizes: ["6-8", "8-10", "10-12"],
-    description: "تيشيرت أطفال بألوان زاهية."
+    sizes: ["S", "M", "L", "XL"],
+    description: "تيشرت بايرن ميونخ – موسم 2025 | إصدار رسمي - الخامة: بلاير (بادج 3D)"
   },
   {
     id: 30,
     slug: "product-30",
-    name: "Flex Shorts 30",
-    category: "men",
-    price: 849,
+    name: "كوتشي كوبا مونديال",
+    category: "sneakers",
+    price: 550,
     img: img30,
-    sizes: ["S", "M", "L", "XL"],
-    description: "شورت عملي مع جيوب جانبية."
+    sizes: ["37", "38", "39", "40", "41","42","43","44","45","46","47","48"],
+    description: "كوتشي كوبا مونديال – أسود × جولد | أحدث نسخة - الخامة: جلد سكاي متين"
   },
   {
     id: 31,
     slug: "product-31",
-    name: "Sneaker Pro 31",
+    name: "كوتشي كوبا مونديال",
     category: "sneakers",
-    price: 1749,
+    price: 550,
     img: img31,
-    sizes: ["40", "41", "42", "43", "44"],
-    description: "حذاء رياضي عصري مع تهوية مثالية."
+    sizes: ["37", "38", "39", "40", "41","42","43","44","45","46","47","48"],
+    description: "كوتشي كوبا مونديال – أسود × أبيض | أحدث نسخة - الخامة: جلد سكاي متين"
   },
   {
     id: 32,
     slug: "product-32",
-    name: "Aero Tee 32",
+    name: "تيشرت منتخب مصر",
     category: "men",
-    price: 719,
+    price: 350,
     img: img32,
     sizes: ["S", "M", "L", "XL"],
-    description: "تيشيرت كلاسيك بخامة ناعمة."
+    description: "تيشرت منتخب مصر | إصدار رسمي - الخامة: كلوز ماش (بادج تطريز)"
   },
   {
     id: 33,
     slug: "product-33",
-    name: "Street Sneaker 33",
+    name: "شورت جوردن",
     category: "sneakers",
-    price: 1449,
+    price: 350,
     img: img33,
-    sizes: ["40", "41", "42", "43", "44"],
-    description: "تصميم مميز مع وسادة هوائية."
+    sizes: ["S", "M", "L", "XL"],
+    description: "شورت جوردن | إصدار رسمي - الخامة: بسكوتة مستوردة (بدج + رقم تطريز ديجيتال)"
   },
   {
     id: 34,
     slug: "product-34",
-    name: "Junior Tee 34",
-    category: "kids",
-    price: 469,
+    name: "كوتشي ترتان كوبا مونديال",
+    category: "sneakers",
+    price: 550,
     img: img34,
-    sizes: ["6-8", "8-10", "10-12"],
-    description: "قميص عملي للأطفال للحركة اليومية."
+    sizes: ["37", "38", "39", "40", "41","42","43","44","45","46","47","48"],
+    description: "كوتشي ترتان كوبا مونديال – أحمر × أبيض | أحدث نسخة - الخامة: جلد سكاي متين"
   },
   {
     id: 35,
@@ -314,132 +316,132 @@ const products = [
   {
     id: 36,
     slug: "product-36",
-    name: "Sneaker Pro 36",
-    category: "sneakers",
-    price: 1799,
+    name: "تيشرت باسكت بول الأمريكي",
+    category: "men",
+    price: 350,
     img: img36,
-    sizes: ["40", "41", "42", "43", "44"],
-    description: "حذاء بخامات عالية الجودة."
+    sizes: ["S", "M", "L", "XL"],
+    description: "تيشرت باسكت بول الأمريكي | إصدار رسمي - الخامة: كلوز ماش مخرمة (بادج تطريز)"
   },
   {
     id: 38,
     slug: "product-38",
-    name: "Street Sneaker 38",
-    category: "sneakers",
-    price: 1499,
+    name: "تيشرت منتخب الأرجنتين",
+    category: "men",
+    price: 350,
     img: img38,
-    sizes: ["40", "41", "42", "43", "44"],
-    description: "حذاء مريح مع تصميم عصري."
+    sizes: ["S", "M", "L", "XL"],
+    description: "تيشرت منتخب الأرجنتين – كلاسيك نسخة ليونيل ميسي | إصدار رسمي - الخامة: بلاير (بادج تطريز)"
   },
   {
     id: 39,
     slug: "product-39",
-    name: "Junior Tee 39",
-    category: "kids",
-    price: 489,
+    name: "تيشرت منتخب الأرجنتين",
+    category: "men",
+    price: 350,
     img: img39,
-    sizes: ["6-8", "8-10", "10-12"],
-    description: "ملابس أطفال بألوان زاهية."
+    sizes: ["S", "M", "L", "XL"],
+    description: "تيشرت منتخب الأرجنتين – الأساسي نسخة ليونيل ميسي | إصدار رسمي - الخامة: بسكوتة (بدج تطريز ديجيتال)"
   },
   {
     id: 40,
     slug: "product-40",
-    name: "Flex Shorts 40",
+    name: "تيشرت منتخب الأرجنتين",
     category: "men",
-    price: 889,
+    price: 350,
     img: img40,
     sizes: ["S", "M", "L", "XL"],
-    description: "شورت مناسب للجيم والرياضة."
+    description: "تيشرت منتخب الأرجنتين – الأساسي نسخة ليونيل ميسي | إصدار رسمي - الخامة: بسكوتة (بدج تطريز ديجيتال)"
   },
   {
     id: 41,
     slug: "product-41",
-    name: "Sneaker Pro 41",
-    category: "sneakers",
-    price: 1849,
+    name: "تيشرت منتخب الأرجنتين",
+    category: "men",
+    price: 350,
     img: img41,
-    sizes: ["40", "41", "42", "43", "44"],
-    description: "حذاء خفيف الوزن بوسادة ناعمة."
+    sizes: ["S", "M", "L", "XL"],
+    description: "تيشرت منتخب الأرجنتين – الأساسي نسخة ليونيل ميسي | إصدار رسمي - الخامة: بسكوتة (بدج تطريز ديجيتال)"
   },
   {
     id: 42,
     slug: "product-42",
-    name: "Aero Tee 42",
+    name: "تيشرت منتخب مصر",
     category: "men",
-    price: 759,
+    price: 350,
     img: img42,
     sizes: ["S", "M", "L", "XL"],
-    description: "تيشيرت بخامة رياضية عالية الجودة."
+    description: "تيشرت منتخب مصر | إصدار رسمي - الخامة: كلوز ماش (بادج تطريز)"
   },
   {
     id: 43,
     slug: "product-43",
-    name: "Street Sneaker 43",
-    category: "sneakers",
-    price: 1549,
+    name: "تيشرت منتخب الأرجنتين",
+    category: "men",
+    price: 350,
     img: img43,
-    sizes: ["40", "41", "42", "43", "44"],
-    description: "حذاء عملي للحركة اليومية."
+    sizes: ["S", "M", "L", "XL"],
+    description: "تيشرت منتخب الأرجنتين – الأساسي نسخة ليونيل ميسي | إصدار رسمي - الخامة: بسكوتة (بدج تطريز ديجيتال)"
   },
   {
     id: 44,
     slug: "product-44",
-    name: "Junior Tee 44",
-    category: "kids",
-    price: 509,
+    name: "تيشرت منتخب البرازيل ",
+    category: "men",
+    price: 350,
     img: img44,
-    sizes: ["6-8", "8-10", "10-12"],
-    description: "قميص أطفال خفيف ومريح."
+    sizes: ["S", "M", "L", "XL"],
+    description: "تيشرت منتخب البرازيل – كلاسيك نسخة الظاهرة | إصدار رسمي - الخامة: بسكوتة (بادج تطريز)"
   },
   {
     id: 45,
     slug: "product-45",
-    name: "Flex Shorts 45",
+    name: "تيشرت النادي الأهلي",
     category: "men",
-    price: 909,
+    price: 350,
     img: img45,
     sizes: ["S", "M", "L", "XL"],
-    description: "شورت بخامة قطنية مرنة."
+    description: "تيشرت النادي الأهلي – نسخة أفريقيا موسم 2023 | إصدار رسمي - الخامة: كلوز ماش (بادج 3D بالضمان)"
   },
   {
     id: 46,
     slug: "product-46",
-    name: "Sneaker Pro 46",
-    category: "sneakers",
-    price: 1899,
+    name: "تيشرت سبورتنج لشبونة",
+    category: "men",
+    price: 350,
     img: img46,
-    sizes: ["40", "41", "42", "43", "44"],
-    description: "حذاء رياضي متين ومناسب للجري."
+    sizes: ["S", "M", "L", "XL"],
+    description: "يشرت سبورتنج لشبونة – نسخة كريستيانو رونالدو 2002 | إصدار كلاسيك - الخامة: بلاير هاي كوبي (بدج تطريز ديجيتال)"
   },
   {
     id: 47,
     slug: "product-47",
-    name: "Aero Tee 47",
+    name: "تيشرت سبورتنج لشبونة",
     category: "men",
-    price: 779,
+    price: 350,
     img: img47,
     sizes: ["S", "M", "L", "XL"],
-    description: "تيشيرت كلاسيكي للرجال."
+    description: "يشرت سبورتنج لشبونة – نسخة كريستيانو رونالدو 2002 | إصدار كلاسيك - الخامة: بلاير هاي كوبي (بدج تطريز ديجيتال)"
   },
   {
     id: 48,
     slug: "product-48",
-    name: "Street Sneaker 48",
-    category: "sneakers",
-    price: 1599,
+    name: "شورت جوردن",
+    category: "men",
+    price: 350,
     img: img48,
-    sizes: ["40", "41", "42", "43", "44"],
-    description: "ستايل عصري للشباب."
+    sizes: ["S", "M", "L", "XL"],
+    description: "شورت جوردن | إصدار رسمي - الخامة: بسكوتة مستوردة (بدج + رقم تطريز ديجيتال)"
   },
   {
     id: 49,
     slug: "product-49",
-    name: "Junior Tee 49",
-    category: "kids",
-    price: 529,
+    name: "تيشرت سبورتنج لشبونة",
+    category: "men",
+    price: 350,
     img: img49,
-    sizes: ["6-8", "8-10", "10-12"],
-    description: "تيشيرت أطفال مميز ومريح."
+    sizes: ["S", "M", "L", "XL"],
+    description: "يشرت سبورتنج لشبونة – نسخة كريستيانو رونالدو 2002 | إصدار كلاسيك - الخامة: بلاير هاي كوبي (بدج تطريز ديجيتال)"
   },
   {
     id: 50,
@@ -504,12 +506,12 @@ const products = [
   {
     id: 56,
     slug: "product-56",
-    name: "Sneaker Pro 56",
-    category: "sneakers",
-    price: 1999,
+    name: "تيشرت نادي الزمالك",
+    category: "men",
+    price: 350,
     img: img56,
-    sizes: ["40", "41", "42", "43", "44"],
-    description: "حذاء بخامة جلدية ممتازة."
+    sizes: ["S", "M", "L", "XL"],
+    description: "تيشرت نادي الزمالك – الأبيض موسم 2026 | إصدار رسمي - الخامة: بسكوتة (بادج 3D)"
   },
   {
     id: 57,
@@ -524,12 +526,12 @@ const products = [
   {
     id: 58,
     slug: "product-58",
-    name: "Street Sneaker 58",
-    category: "sneakers",
-    price: 1699,
+    name: "تيشرت نادي الزمالك",
+    category: "men",
+    price: 350,
     img: img58,
-    sizes: ["40", "41", "42", "43", "44"],
-    description: "حذاء رياضي بخفة وراحة."
+    sizes: ["S", "M", "L", "XL"],
+    description: "تيشرت نادي الزمالك – الأزرق موسم 2026 | إصدار رسمي - الخامة: خمس بسكوتة (بادج 3D"
   },
   {
     id: 59,
