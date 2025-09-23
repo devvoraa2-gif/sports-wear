@@ -10,12 +10,11 @@ export default function Navbar() {
 
   const linkBase =
     "relative text-sm px-2 py-1 transition-colors after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#D61419] after:transition-all after:duration-300";
-  const linkIdle = "text-white after:content-['']";
-  const linkActive =
-    "text-white font-semibold after:w-full after:content-['']";
+  const linkIdle = "after:content-['']";
+  const linkActive = "font-semibold after:w-full after:content-['']";
 
   return (
-    <header className="sticky top-0 z-50 bg-black text-white p-1">
+    <header className="sticky top-0 z-50 bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3">
@@ -65,13 +64,10 @@ export default function Navbar() {
         </nav>
 
         {/* Desktop actions */}
-        <div className="hidden md:flex items-center gap-2">
-          <button className="px-3 py-2 text-sm transition-colors duration-300 ease-in-out hover:text-[#D61419]">
-            تسجيل الدخول
-          </button>
+        <div className="hidden md:flex items-center">
           <Link
             to="/cart"
-            className="px-3 py-2 text-sm text-white transition-colors duration-300 ease-in-out hover:text-[#D61419]"
+            className="px-3 py-2 text-sm transition-colors duration-300 hover:text-[#D61419]"
           >
             السلة ({count})
           </Link>
@@ -81,7 +77,7 @@ export default function Navbar() {
         <button
           onClick={() => setOpen(true)}
           aria-label="فتح القائمة"
-          className="md:hidden inline-flex items-center justify-center h-8 w-10 text-white transition"
+          className="md:hidden inline-flex items-center justify-center h-8 w-10"
         >
           <span className="sr-only">قائمة</span>
           <div className="flex flex-col gap-1.5 rtl:scale-x-[-1]">
